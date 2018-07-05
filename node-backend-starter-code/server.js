@@ -3,6 +3,7 @@ var bodyParser = require('body-parser'); //Added body-parser require
 var app = express();
 var fs = require("fs");
 var path = require("path");
+var OMDB = require("OMDB");
 
 app.use(express.static(path.join(__dirname, "/public"))); //Closed  parenthesis
 app.use(bodyParser.urlencoded({ extended: false }));
